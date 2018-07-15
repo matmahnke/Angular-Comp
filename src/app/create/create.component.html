@@ -1,0 +1,37 @@
+<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
+  <form #f="ngForm" (ngSubmit)="onClick(f)" novalidate>
+    <div>
+      <div>
+        <span>Nome</span>
+      </div>
+      <input name="Nome" ngModel required type="text">
+    </div>
+    <br/>
+    <div>
+      <div>
+        <span>Imagem</span>
+      </div>
+      <input name="Imagem" ng-model (change)='onFileSelected($event)' type="file" />
+    </div>
+    <br/>
+    <div>
+      <div>
+        <span>Preco</span>
+      </div>
+      <input name="Preco" ngModel required type="text">
+    </div>
+    <br/>
+    <div>
+      <div>
+        <div>
+          <span>Peso (g)</span>
+        </div>
+        <input name="Peso" ngModel required type="text">
+      </div>
+      <div>
+        <br/>
+        <input type="submit" value="Inserir">
+      </div>
+    </div>
+  </form>
+</div>

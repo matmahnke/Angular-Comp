@@ -1,0 +1,36 @@
+<div class="login">
+  <div class="container">
+    <h2>Login</h2>
+
+    <div class="agileits_header">
+      <div class="container">
+        <div class="w3l_offers">
+          <div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
+            <form #f="ngForm" (ngSubmit)="login(f)" novalidate>
+              <div>
+                <div>
+                  <span>Email</span>
+                </div>
+                <input name="Email" ngModel required type="text">
+              </div>
+              <br/>
+              <div>
+                <div>
+                  <span>Senha</span>
+                </div>
+                <input name="password" ngModel required type="password">
+              </div>
+              <div>
+                <br/>
+                <input type="submit" value="Login">
+              </div>
+            </form>
+          </div>
+          <p>
+            <a href="/create">Registre-se</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
